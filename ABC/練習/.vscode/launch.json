@@ -6,12 +6,13 @@
     "configurations": [
 
         {
+            "name": "(LLDB) Debug",
             "type": "lldb",
             "request": "launch",
-            "name": "Debug",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "cwd": "${fileDirname}"
+            "cwd": "${fileDirname}/",
+            "preLaunchTask": "clang++ build active file",
         }
     ]
 }
